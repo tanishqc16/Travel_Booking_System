@@ -1,33 +1,55 @@
-.footer{
-    padding-top: 70px;
-    padding-bottom: 30px;
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.footer .logo img{
-    width: 50%;
-    margin-bottom: 1rem;
+
+.footer-container{
+    background-color: #e9e9e9;
+    display: flex;
+    flex-direction: column;
+    color: orange;
+    width:100%;
 }
-.footer .logo p{
-    color: var(--text-color);
+.footer-row-1{   
+    display: flex;
+    flex-direction: row;
+} 
+
+.copyright{
+    color:rgba(250, 107, 5, 0.822);
+    height: min-content;
+    padding-left: 3%;
 }
-.social__links span a{
-    text-decoration:none;
-    color: var(--heading-color);
+.footer-row-1 .links li a:hover{
+    color:rgb(120, 115, 115);
+    text-decoration: none;
+}
+
+.footer {
+    color: black;
+    flex-wrap: wrap;
+    background-color: #e9e9e9;
+    justify-content: space-between;
+    width:90%;
+    height: min-content;
+    margin: 0 auto; 
     font-size: 1.2rem;
 }
-.footer__link-title{
-    color:var(--heading-color);
-    margin-bottom: 1rem;
-}
-.footer__quick-links li a{
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 1.1rem;
-}
-.footer__quick-links h6 span i{
-    color: var(--secondary-color);
-    font-size: 1.1rem;
-}
-.copyright{
-    color: var(--text-color);
-    font-size:1rem;
-}
+
+@media screen and (max-width:750px) {
+    
+    .footer-row-1{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+    }
+    .footer-row-1 .column{
+        width: 90%;
+      } 
+
+    }
+

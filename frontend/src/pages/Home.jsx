@@ -5,15 +5,15 @@ import heroImg from '../assets/images/hero-img01.jpg';
 import heroImg02 from '../assets/images/hero-img02.jpg';
 import heroVideo from '../assets/images/hero-video.mp4';
 import worldImg from '../assets/images/world.png';
-import experienceImg from '../assets/images/experience.png';
+// import experienceImg from '../assets/images/experience.png';
 import Subtitle from '../shared/Subtitle';
 import SearchBar from '../shared/SearchBar';
-import ServiceCard from '../services/ServiceCard';
-import ServiceList from '../services/ServiceList';
+// import ServiceCard from '../services/ServiceCard';
+// import ServiceList from '../services/ServiceList';
 import FeaturedTourList from '../components/Featured-tours/FeaturedTourList';
-import MasnoryImagesGallery from '../components/images-gallery/MasnoryImagesGallery';
 import Testimonials from '../components/Testimonial/Testimonial';
-import Newsletter from '../shared/Newsletter';
+// import Newsletter from '../shared/Newsletter';
+import Stats from './Stats';
 
 
 const Home = () => {
@@ -28,12 +28,11 @@ const Home = () => {
                   <img src={worldImg} alt="" />
                 </div>
                 <h1>
-                  Travelling opens the door to creating{" "}
-                  <span className="highight">memories</span>
+                Travel far, stay close to your dreams {" "}
+                  <span className="highight"></span>
                 </h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet ipsum vitae dignissimos totam mollitia saepe eveniet et. Officia nobis non ad inventore, ea porro, totam tempora earum cumque quae consectetur iste.
-                </p>
+                As you traverse landscapes and navigate through the unknown, remember: every detour is a lesson, every encounter is a story, every sunset is a painting, and every journey is a masterpiece                </p>
               </div>
             </Col>
 
@@ -43,12 +42,12 @@ const Home = () => {
               </div>
             </Col>
             <Col lg='2'>
-              <div className="hero__img-box mt-4">
+              <div className="hero__img-box">
                 <video src={heroVideo} alt="" />
               </div>
             </Col>
             <Col lg='2'>
-              <div className="hero__img-box mt-5">
+              <div className="hero__img-box">
                 <img src={heroImg02} alt="" />
               </div>
             </Col>
@@ -57,7 +56,7 @@ const Home = () => {
         </Container>
         </section>
         {/* Services */}
-        <section>
+        {/* <section>
         <Container>
           <Row>
             <Col lg="3">
@@ -67,7 +66,7 @@ const Home = () => {
             <ServiceList />
           </Row>
         </Container>
-      </section> 
+      </section>  */}
 
       {/*Features*/}
       <section>
@@ -75,15 +74,14 @@ const Home = () => {
           <Row>
             <Col lg='12' className='mb-5'>
               <Subtitle subtitle={"Explore"} />
-              <h2 className="featured__tour-title">Our featured tour</h2>
+              <h2 className="featured__tour-title">Popular tours</h2>
             </Col>
             <FeaturedTourList />
           </Row>
         </Container>
       </section>
-
       {/* experience */}
-      <section>
+      {/* <section>
         <Container>
           <Row>
             <Col lg='6'>
@@ -116,32 +114,15 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
-      </section>
-
-      {/* gallery */}
-      <section>
-        <Container>
-          <Row>
-            <Col lg="12">
-              <Subtitle subtitle={"Gallery"} />
-              <h2 className='gallery__title'>
-                Visit our customers tour gallery
-              </h2>
-            </Col>
-            <Col lg="12">
-              <MasnoryImagesGallery />
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      </section> */}
 
       {/* testimonials */}
       <section>
         <Container>
           <Row>
             <Col lg='12'>
-              <Subtitle subtitle={'fanse love'}></Subtitle>
-              <h2 className="testimonial__title">What our fanse says about us</h2>
+              <Subtitle subtitle={'Testimonials'}></Subtitle>
+              <h2 className="testimonial__title">What our fans says about us</h2>
             </Col>
             <Col lg="12">
               <Testimonials />
@@ -149,8 +130,12 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      <Newsletter />
+      {/* <Newsletter /> */}
+    
+      <Stats/>
+
     </>
+    
 }
 
 export default Home

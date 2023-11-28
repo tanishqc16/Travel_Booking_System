@@ -1,135 +1,47 @@
-import React from 'react'
-import './footer.css'
 
-import {Container,Row,Col,ListGroup,ListGroupItem} from 'reactstrap';
-import {Link} from 'react-router-dom';
-import logo from "../../assets/images/logo.png";
+import './footer.css';
+import React from "react";
 
-const quick__links=[
-  {
-    path:'/home',
-    display:'Home'
-  },
-  {
-    path:'/about',
-    display:'About'
-  },{
-    path:'/tours',
-    display:'Tours'
-  }
-];
-
-const quick__links2=[
-  {
-    path:'/gallery',
-    display:'Gallery'
-  },
-  {
-    path:'/login',
-    display:'Login'
-  },{
-    path:'/register',
-    display:'Register'
-  }
-];
-
-const Footer = () => {
-
-  const year=new Date().getFullYear()
-
-
-  return <footer className="footer">
-    <Container>
-      <Row>
-        <Col lg="3">
-          <div className="logo">
-            <img src={logo} alt="" />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quaerat earum minus.</p>
-
-            <div className="social__links d-flex align-items-center gap-4">
-              <span>
-                <Link to='#'><i class="ri-youtube-line"></i></Link>
-              </span>
-              <span>
-                <Link to='#'><i class="ri-github-fill"></i></Link>
-              </span>
-              <span>
-                <Link to='#'><i class="ri-facebook-circle"></i></Link>
-              </span>
-              <span>
-                <Link to='#'><i class="ri-instagram-line"></i></Link>
-              </span>
-            </div>
+function Footer(){
+    return(
+        <>
+        <br />
+        <br />
+   <div className="footer-container" >
+      <div className="footer" style={{color:'black'}}>
+        <div className="footer-row-1">
+        <div className="column 1" style={{paddingLeft:"10rem", paddingTop:"2rem"}}>
+        <h3 style={{fontSize:'1.5rem', fontWeight:'600', color:'rgb(255,87,87)'}}>Quick Links </h3>
+            <br />
+              <ui className="links" style={{listStyle:'none', display:'grid'}}>
+               <li style={{padding:'1% 4%', marginLeft:'4%'}}><a href="/" style={{color:'black'}}>Home</a></li>
+               <li style={{padding:'1% 4%', marginLeft:'4%'}}><a href="/gallery" style={{color:'black'}}>Gallery</a></li>
+               <li style={{padding:'1% 4%', marginLeft:'4%'}}><a href="/tours" style={{color:'black'}}>Tour</a></li>
+               </ui>
           </div>
-        </Col>
-
-        <Col lg='3'>
-          <h5 className="footer__link-title">Discover</h5>
-          <ListGroup className="footer__quick-links">
-            {
-              quick__links.map((item,index)=>(
-                <ListGroupItem key={index} className="ps-0 border-0">
-                  <Link to={item.path}>{item.display}</Link>
-                </ListGroupItem>
-              ))
-            }
-          </ListGroup>
-        </Col>
-        <Col lg='3'>
-        <h5 className="footer__link-title">Quick Links</h5>
-          <ListGroup className="footer__quick-links">
-            {
-              quick__links2.map((item,index)=>(
-                <ListGroupItem key={index} className="ps-0 border-0">
-                  <Link to={item.path}>{item.display}</Link>
-                </ListGroupItem>
-              ))
-            }
-          </ListGroup>
-        </Col>
-        <Col lg='3'>
-        <h5 className="footer__link-title">Contact</h5>
-          <ListGroup className="footer__quick-links">
-            
-              
-                <ListGroupItem  className="ps-0 border-0 d-flex align-items-center gap-3">
-                <h6 className="mb-0 d-flex align-items-center gap-2">
-                  <span><i class="ri-map-pin-line"></i></span>
-                  Address:
-                </h6>
-
-                <p className="mb-0">Pune,India</p>
-              
-                </ListGroupItem>
-                <ListGroupItem  className="ps-0 border-0 d-flex align-items-center gap-3">
-                <h6 className="mb-0 d-flex align-items-center gap-2">
-                  <span><i class="ri-mail-line"></i></span>
-                  Email:
-                </h6>
-
-                <p className="mb-0">tanishqbc16@gmail.com</p>
-              
-                </ListGroupItem>
-                <ListGroupItem  className="ps-0 border-0 d-flex align-items-center gap-3">
-                <h6 className="mb-0 d-flex align-items-center gap-2">
-                  <span><i class="ri-phone-line"></i></span>
-                  Phone:
-                </h6>
-
-                <p className="mb-0">Pune, India</p>
-              
-                </ListGroupItem>
-              
-            
-          </ListGroup>
-        </Col>
-
-        <Col lg='12' className="text-center pt-5">
-          <p className="copyright">Copyright {year},design and develop by Muhibur Rahman. All rights reserved.</p>
-        </Col>
-      </Row>
-    </Container>
-  </footer>
+          <div className="column 2" style={{paddingLeft:"10rem", paddingTop:"2rem"}}>
+            <h3 style={{fontSize:'2rem', fontWeight:'700', color:'rgb(255,87,87)'}}>Get In Touch </h3>
+            <br />
+              <ul class="information">
+                  <span>Address: VIIT Pune, India<br></br>
+                  </span>
+                  <br></br>
+                <span> Email us : TravelVista16@gmail.com <br></br></span>
+                <br></br>
+                <span style={{color:'#FF9595'}}>Feel free to write us about your Experiences and Suggestions</span>
+              </ul>
+          </div>
+        </div>
+        </div>
+        <div className="footer-row-2">
+          <hr></hr>
+          <div className="copyright" style={{color:'#FF9595'}}>
+            <p> ⓒ All Rights Reserved by <a href="/" style={{color:'grey'}}>TravelVista Pvt Ltd</a> </p>
+          </div>
+       </div>
+      </div>
+        </>
+    )
 }
 
 export default Footer;

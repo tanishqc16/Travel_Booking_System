@@ -38,8 +38,7 @@ const Testimonial = () => {
   return <Slider {...settings} >
     <div className="testimonial py-4 px-3">
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati temporibus cumque eligendi hic deleniti et reiciendis assumenda tempora nesciunt, cupiditate sint accusantium quod tempore ex deserunt illo beatae voluptatum quos mollitia quasi.
-        </p>
+        Booking through this website made our dream vacation a reality! The options were endless, and the process was seamless. We created memories that will last a lifetime. Can't wait to plan our next adventure with you        </p>
         <div className="d-flex align-items-center gap-4 mt-3">
             <img src={ava01} className="w-25 h-25 rounded-2" alt="" />
             <div>
@@ -50,8 +49,7 @@ const Testimonial = () => {
     </div>
     <div className="testimonial py-4 px-3">
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati temporibus cumque eligendi hic deleniti et reiciendis assumenda tempora nesciunt, cupiditate sint accusantium quod tempore ex deserunt illo beatae voluptatum quos mollitia quasi.
-        </p>
+        I'm not one to write reviews, but my experience with this booking platform was too good not to share. The website is user-friendly, and the booking process is straightforward. Highly recommended!        </p>
         <div className="d-flex align-items-center gap-4 mt-3">
             <img src={ava02} className="w-25 h-25 rounded-2" alt="" />
             <div>
@@ -62,8 +60,7 @@ const Testimonial = () => {
     </div>
     <div className="testimonial py-4 px-3">
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati temporibus cumque eligendi hic deleniti et reiciendis assumenda tempora nesciunt, cupiditate sint accusantium quod tempore ex deserunt illo beatae voluptatum quos mollitia quasi.
-        </p>
+        I've used several travel booking websites before, but none compare to the service and value I found here. Trust me, this is the go-to platform for anyone seeking quality and affordability in their travel plans.        </p>
         <div className="d-flex align-items-center gap-4 mt-3">
             <img src={ava03} className="w-25 h-25 rounded-2" alt="" />
             <div>

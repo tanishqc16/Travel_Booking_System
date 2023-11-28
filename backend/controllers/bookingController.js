@@ -10,7 +10,7 @@ export const createBooking = async(req, res)=>{
             message:"Your tour is Booked",
             data:savedBooking,
         });
-    } catch (error) {
+    } catch (err) {
         res.status(500).json({
             success:true,
             message:"Internal Server error",
