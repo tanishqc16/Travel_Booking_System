@@ -4,7 +4,6 @@ import "../styles/tour.css";
 import { Container, Row, Col } from 'reactstrap';
 import TourCard from './../shared/TourCard';
 import SearchBar from './../shared/SearchBar';
-import NewsLetter from './../shared/Newsletter';
 
 import useFetch from '../hooks/useFetch.js'
 import{BASE_URL} from "../utils/config.js"
